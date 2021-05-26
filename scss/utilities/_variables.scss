@@ -1,0 +1,28 @@
+
+/* ======= colour variables ========= */
+$color-primary: #58e1c1;
+$color-secondary: #777;
+$color-tertiary: #51ddfc;
+$bg-color-col1: #927bc1;
+$bg-color-col2: #fd7856;
+$bg-color-col3: #deb2ee;
+$bg-color-col4: #7ee6fd;
+$bg-color-col5: #88d9a0;
+$bg-color-col6: #4da2bb;
+$bg-color-col7: #ec9fa3;
+$bg-color-col8: #fd9f85;
+$bg-color-col9: #e4757a;
+$bg-color-col10: #63cc82;
+$bg-color-col11: #51ddfc;
+$bg-color-col12: #80e8d1;
+$white: #fff;
+
+/* ======= media width variables ========= */
+$bp-tablet: 768px;
+
+
+/* ======= Functions ========= */
+
+@function pc-width($x) {
+    @return ($x / 12) * 100%;
+}

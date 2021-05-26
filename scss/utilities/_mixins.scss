@@ -1,0 +1,7 @@
+@mixin cols-mix($y) {
+    flex-basis: pc-width($y);
+}
+
+@mixin base-light($color) {
+    background-color: lighten($color, 25%);
+}

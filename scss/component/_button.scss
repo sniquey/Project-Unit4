@@ -1,0 +1,56 @@
+
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @media(min-width: $bp-tablet) {
+        padding: 10px 30px;
+    }
+    & + & {
+        @media(min-width: $bp-tablet) {
+            margin-left: 10px;
+        }
+
+    }
+  }
+  
+  .default {
+    background-color: $color-tertiary;
+    &:hover {
+        @include base-light($color-tertiary);
+    }
+  }
+  
+  .error {
+    background-color: $bg-color-col9;
+    &:hover {
+        @include base-light($bg-color-col9);
+    }
+  }
+  
+  .info {
+    background-color: $bg-color-col1;
+    &:hover {
+        @include base-light($bg-color-col1);
+    }
+  }
+  
+  .success {
+    background-color: $bg-color-col10;
+    &:hover {
+        @include base-light($bg-color-col10);
+    }
+  }
+  
+  .warning {
+    background-color: $bg-color-col2;
+    &:hover {
+        @include base-light($bg-color-col2);
+    }
+  }
+  

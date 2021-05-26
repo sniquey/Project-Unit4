@@ -1,0 +1,136 @@
+
+
+.container {
+    padding: 0 10px;
+    @media(min-width: $bp-tablet) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+.centered {
+    @media(min-width: $bp-tablet) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    @media(min-width: $bp-tablet) {
+        flex-direction: row;
+    }
+}
+
+[class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    @media(min-width: $bp-tablet) {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+    }
+    & + & {
+        @media(min-width: $bp-tablet) {
+            margin-left: 10px;
+        }
+    }
+}
+
+.theme.col-1 {
+    background-color: $bg-color-col1;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(1);
+    }
+}
+
+.theme.col-2 {
+    background-color: $bg-color-col2;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(2);
+    }
+}
+
+.theme.col-3 {
+    background-color: $bg-color-col3;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(3);
+    }
+}
+
+.theme.col-4 {
+    background-color: $bg-color-col4;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(4);
+    }
+}
+
+.theme.col-5 {
+    background-color: $bg-color-col5;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(5);
+    }
+}
+
+.theme.col-6 {
+    background-color: $bg-color-col6;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(6);
+    }
+}
+
+.theme.col-7 {
+    background-color: $bg-color-col7;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(7);
+    }
+}
+
+.theme.col-8 {
+    background-color: $bg-color-col8;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(8);
+    }
+}
+
+.theme.col-9 {
+    background-color: $bg-color-col9;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(9);
+    }
+}
+
+.theme.col-10 {
+    background-color: $bg-color-col10;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(10);
+    }
+}
+
+.theme.col-11 {
+    background-color: $bg-color-col11;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(11);
+    }
+}
+
+.theme.col-12 {
+    background-color: $bg-color-col12;
+    @media(min-width: $bp-tablet) {
+        @include cols-mix(12);
+    }
+}
+
+.card {
+    flex-basis: 100%;
+}
+
